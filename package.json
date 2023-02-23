@@ -2,11 +2,10 @@
   "name": "next-tsc-tailwind",
   "private": false,
   "scripts": {
-    "dev": "concurrently \"next dev --turbo\" \"pnpm tailwind --watch\"",
-    "build": "pnpm tailwind && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "tailwind": "tailwindcss -i ./src/styles/globals.css -o ./src/styles/output.css"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "13.0.5",
